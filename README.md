@@ -1,12 +1,12 @@
-# 9KXNHD4
+# CVX579X
 
 给 AI agent 用的 skill：把你的 OC 角色做成 [STOMPGAME 自定义导入页](https://ikkimikka.net/stompgame/?character=custom)
 能直接导入的自定义角色图 `custom.png`，同时产出可设置角色名、
 描述与结算评级的 `custom.zip`，并自动开始游戏。
 
-仓库：<https://github.com/ikkimikka/9KXNHD4>
+仓库：<https://github.com/CVX579X/poss>
 
-> 仓库原名 `stompgama`，2026-11-10 更名为 `9KXNHD4`；旧地址会自动重定向。
+> 仓库原名 `stompgama`，2026-11-10 更名为 `9KXNHD4`，后经 `U3GVVSV` 到 `CVX579X`；旧地址会自动重定向。
 > skill 内部标识仍为 `stompgama`（小写，符合 skill 命名规范），不影响触发。
 
 ## 一句话用法
