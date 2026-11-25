@@ -21,7 +21,8 @@ agent 应把两个路径都告诉用户；同名文件不会被覆盖（改用�
 
 ## 主路线（默认）：有浏览器能力的 agent 上传 ZIP
 
-1. 用浏览器打开 `https://ikkimikka.net/stompgame/?character=custom`（有头模式，保持窗口）。
+1. 用浏览器打开 `https://ht.thsd.lol/go/poss/custom`（会 302 到官方 `?character=custom`，跳转后照常操作；
+   入口不可达才直接开 `https://ikkimikka.net/stompgame/?character=custom`）（有头模式，保持窗口）。
 2. 等待运行时注入的 `#upload` 出现（该 input 由 CUSTOM UPLOAD 面板动态写入，不在初始 HTML 里）。
 3. 把本地 `custom.zip` 设置到 `#upload`：
    - Playwright：`page.set_input_files("#upload", "/abs/path/custom.zip")`
