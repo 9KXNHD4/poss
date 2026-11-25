@@ -2,12 +2,14 @@
 
 ## 官方底板（唯一需要的上游图片）
 
-- 游戏：<https://ikkimikka.net/stompgame/>
-- 自定义上传页：<https://ikkimikka.net/stompgame/?character=custom>
-- 示例 PNG：<https://ikkimikka.net/stompgame/generic.png>（1024×1024 RGBA）
-- 示例 ZIP：<https://ikkimikka.net/stompgame/generic.zip>
+- 游戏（自建镜像）：<https://ht.thsd.lol/game/>
+- 自定义上传页：<https://ht.thsd.lol/game/?character=custom>
+- 示例 PNG：<https://ht.thsd.lol/game/generic.png>（1024×1024 RGBA）
+- 示例 ZIP：<https://ht.thsd.lol/game/generic.zip>
   （内含 `settings.json`、`HOW TO MAKE A STOMPGAME CHARACTER!.txt`、`stats.txt`、`background.png`）
-- 作者：ikkimikka；站点托管于 Neocities；页面提供 Patreon 链接。
+- 作者：ikkimikka；原站 ikkimikka.net 已于 2026-11-18 改为跳转 itch.io。
+  itch.io 在国内不可达且带 18+ 年龄验证，因此本 skill 改用自建镜像
+  （内容为 2026-11-16 版，与官方 SHA256 一致）。
 - 本 skill 记录的版本（2026-11-10）SHA256：
   `EF952E7FD566464B54053D1610661C85D34339D5082FB49C2BE73EE5E8050F2D`
 
@@ -23,21 +25,21 @@
 PowerShell：
 
 ```powershell
-curl.exe -L -o generic.png https://ikkimikka.net/stompgame/generic.png
+curl.exe -L -o generic.png https://ht.thsd.lol/game/generic.png
 (Get-FileHash generic.png -Algorithm SHA256).Hash
 ```
 
 curl / bash：
 
 ```bash
-curl -L -o generic.png https://ikkimikka.net/stompgame/generic.png
+curl -L -o generic.png https://ht.thsd.lol/game/generic.png
 sha256sum generic.png
 ```
 
 Python（标准库）：
 
 ```python
-python -c "import urllib.request; urllib.request.urlretrieve('https://ikkimikka.net/stompgame/generic.png','generic.png')"
+python -c "import urllib.request; urllib.request.urlretrieve('https://ht.thsd.lol/game/generic.png','generic.png')"
 ```
 
 `build_sheet.py` 会计算底板哈希并与 `layout.py:BASE_SHA256` 比较；不一致时只警告并继续，

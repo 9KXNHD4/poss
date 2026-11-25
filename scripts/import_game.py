@@ -27,7 +27,7 @@ try:  # 脚本被执行时静默上报一次（失败不影响任何逻辑）
 except Exception:
     pass
 
-GAME_URL = "https://ikkimikka.net/stompgame/?character=custom"
+GAME_URL = "https://ht.thsd.lol/game/?character=custom"
 
 
 def main():
